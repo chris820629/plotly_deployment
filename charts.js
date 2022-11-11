@@ -109,7 +109,10 @@ function buildCharts(sample) {
       xaxis: {title: "Sample Value"},
       yaxis: {title: "ID"},
       width: 700,
-      height: 400
+      height: 400,
+      paper_bgcolor:'rgba(0,0,0,0)',
+      plot_bgcolor:'rgba(0,0,0,0)',
+      padding: 10
     };
     // 10. Use Plotly to plot the data with the layout. 
     
@@ -137,7 +140,9 @@ function buildCharts(sample) {
       yaxis: {title: "Sample Value"},
       width: 900,
       height: 700,
-      hovermode:'closest'
+      hovermode:'closest',
+      paper_bgcolor:'rgba(0,0,0,0)',
+      plot_bgcolor:'rgba(0,0,0,0)'
     };
 
     // 3. Use Plotly to plot the data with the layout.
@@ -163,7 +168,12 @@ function buildCharts(sample) {
           { range: [8, 10], color: "green" }
         ]}
     }]
-    var gauge_layout = { width: 600, height: 450, margin: { t: 0, b: 0 } }
+    var gauge_layout = { 
+      width: 600, 
+      height: 450, 
+      margin: { t: 0, b: 0 },
+      paper_bgcolor:'rgba(0,0,0,0)',
+      plot_bgcolor:'rgba(0,0,0,0)' }
     Plotly.newPlot('gauge',gauge_data,gauge_layout)
   });
 }
