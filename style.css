@@ -1,6 +1,6 @@
 .jumbotron{
     background-image: url('https://elements-cover-images-0.imgix.net/ba994b8c-8bcd-4338-922d-2a20ce733780?auto=compress%2Cformat&fit=max&w=2038&s=b29b55cb71a401e3c583a7e45df95df9');
-    background-size: cover ;
+    background-size: contain ;
     padding-top: 10%;
     padding-bottom: 28%;
     max-width: 100%;
