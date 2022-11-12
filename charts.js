@@ -114,9 +114,10 @@ function buildCharts(sample) {
       plot_bgcolor:'rgba(0,0,0,0)',
       padding: 10
     };
+    var config = {responsive: true}
     // 10. Use Plotly to plot the data with the layout. 
     
-    Plotly.newPlot('bar',barData,barLayout)
+    Plotly.newPlot('bar',barData,barLayout,config)
 
     
     //Plot Bubble Chart
@@ -146,7 +147,7 @@ function buildCharts(sample) {
     };
 
     // 3. Use Plotly to plot the data with the layout.
-    Plotly.newPlot('bubble',bubbleData,bubbleLayout); 
+    Plotly.newPlot('bubble',bubbleData,bubbleLayout,config); 
 
     
     //build gauge chart
@@ -174,6 +175,6 @@ function buildCharts(sample) {
       margin: { t: 0, b: 0 },
       paper_bgcolor:'rgba(0,0,0,0)',
       plot_bgcolor:'rgba(0,0,0,0)' }
-    Plotly.newPlot('gauge',gauge_data,gauge_layout)
+    Plotly.newPlot('gauge',gauge_data,gauge_layout,config)
   });
 }
